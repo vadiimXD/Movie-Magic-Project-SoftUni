@@ -1,0 +1,15 @@
+
+<main>
+    <section id="catalog">
+        <h1>Top Movies</h1>
+        <div class="band">
+            {{#each movies}}
+            {{> movie}}
+            {{else}}
+            <div class="no-posts">
+                <p class="no-offer">There are no movies with a 4 or 5 rating</p>
+            </div>
+            {{/each}}
+        </div>
+    </section>
+</main>
